@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  background-color: rgb(3, 1, 16);
+  color: #b18bcd;
+  font-family: monospace;
+}
+
+main {
+  display: grid;
+  gap: 2ch;
+  background-color: #06012a;
+}
+
+@media (width >= 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.episodes {
+  display: grid;
+  gap: 2ch;
+  padding: 2ch;
+}
+
+.episodes li {
+  border: 2px solid #b18bcd;
+}
+
+.episodes li:hover {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.details {
+  padding: 2ch;
+}
